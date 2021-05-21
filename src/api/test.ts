@@ -15,7 +15,7 @@ router.post(
         }
 
         const { name } = req.body;
-        res.json(name);
+        res.json({name});
     }
 );
 module.exports = router;
