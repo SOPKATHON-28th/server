@@ -24,6 +24,11 @@ exports.default = {
      * Your secret sauce
      */
     jwtSecret: process.env.JWT_SECRET,
-    jwtAlgorithm: process.env.JWT_ALGO
+    jwtAlgorithm: process.env.JWT_ALGO,
+    githubClientId: process.env.GITHUB_CLIENT_ID,
+    githubSecret: process.env.GITHUB_SECRET,
+    awsBucket: process.env.AWS_BUCKET,
+    awsS3AccessKey: process.env.AWS_ACCESS_KEY,
+    awsS3SecretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
 };
 //# sourceMappingURL=index.js.map
