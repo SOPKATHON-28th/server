@@ -11,8 +11,8 @@ db_1.default();
 app.use(express_1.default.urlencoded());
 app.use(express_1.default.json());
 // Define Routes
-app.use("/test", require("./api/test"));
-app.use("/image", require("./api/image"));
+app.use("/api/player", require("./api/player"));
+app.use("/api/penalty", require("./api/penalty"));
 // error handler
 app.use(function (err, req, res, next) {
     // set locals, only providing error in development
