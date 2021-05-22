@@ -24,7 +24,7 @@ router.get("/", async(req: Request, res: Response) => {
             console.error(error.message);
             res.status(500).json({
                 "status":500,
-                "success":true,
+                "success":false,
                 "message":"Server Error",
                 "data": null
             });
