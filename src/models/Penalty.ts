@@ -1,12 +1,14 @@
 import mongoose from "mongoose";
-
+import { IPenalty } from "../interfaces/IPenalty"
 const PenaltySchema = new mongoose.Schema({
     img: {
-        type:String
+        type:String,
+        required: true
     },
     penaltyIdx: {
-        type:Number
+        type:Number,
+        required: true
     }
 });
 
-export default mongoose.model<mongoose.Document>("Penalty",PenaltySchema);
+export default mongoose.model<IPenalty & mongoose.Document>("Penalty",PenaltySchema);
