@@ -5,7 +5,7 @@ import Penalty from "../models/Penalty";
 
 router.get("/", async(req: Request, res: Response) => {
         try{
-            const randomInt = Math.floor(Math.random()*3)+1;
+            const randomInt = Math.floor(Math.random()*3);
             const penalty = await Penalty.findOne({penaltyIdx:randomInt});
             console.log(penalty);
             res.json({
