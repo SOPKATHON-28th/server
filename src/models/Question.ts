@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { IQuestion } from "../interfaces/IQuestion"
 
 const QuestionSchema = new mongoose.Schema({
   title: {
@@ -13,4 +14,4 @@ const QuestionSchema = new mongoose.Schema({
 });
 
 //export default 
-export default mongoose.model<mongoose.Document>("Question", QuestionSchema);
+export default mongoose.model<IQuestion & mongoose.Document>("Question", QuestionSchema);
