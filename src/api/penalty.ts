@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express";
+import { Mongoose } from "mongoose";
 const router = express.Router();
 
 import Penalty from "../models/Penalty";
@@ -25,8 +26,7 @@ router.get("/", async(req: Request, res: Response) => {
             res.status(500).json({
                 "status":500,
                 "success":false,
-                "message":"Server Error",
-                "data": null
+                "message":"Server Error"
             });
             console.log("GET Penalty 500 ServerError")
         }
