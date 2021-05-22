@@ -18,7 +18,7 @@ router.get("/", async(req: Request, res: Response) => {
                 }
                     
             })
-            console.log("GET 200 Success");
+            console.log("GET Penalty 200 Success");
             
         } catch(error) {
             console.error(error.message);
@@ -28,7 +28,7 @@ router.get("/", async(req: Request, res: Response) => {
                 "message":"Server Error",
                 "data": null
             });
-            console.log("GET 500 ServerError")
+            console.log("GET Penalty 500 ServerError")
         }
 });
 
