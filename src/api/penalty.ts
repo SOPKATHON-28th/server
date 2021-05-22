@@ -18,7 +18,7 @@ router.get("/", async(req: Request, res: Response) => {
                 }
                     
             })
-            console.log("GET Penalty 200 Success");
+            console.log("GET Penalty 200 OK");
             
         } catch(error) {
             console.error(error.message);
